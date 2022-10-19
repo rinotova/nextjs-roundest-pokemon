@@ -1,10 +1,10 @@
 // src/server/router/_app.ts
-import { router } from "../trpc";
+import { router } from '../trpc';
 
-import { exampleRouter } from "./example";
+import { pokemonRouter } from './';
 
 export const appRouter = router({
-  example: exampleRouter,
+  pokemon: pokemonRouter,
 });
 
 // export type definition of API
